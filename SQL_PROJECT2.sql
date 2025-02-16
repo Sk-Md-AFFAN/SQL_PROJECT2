@@ -11,8 +11,8 @@ CREATE TABLE branch
 
 
 -- Create table "Employee"
-DROP TABLE IF EXISTS employees;
-CREATE TABLE employees
+DROP TABLE IF EXISTS emp;
+CREATE TABLE emp
 (
             emp_id VARCHAR(10) PRIMARY KEY,
             emp_name VARCHAR(30),
@@ -36,8 +36,8 @@ CREATE TABLE members
 
 
 -- Create table "Books"
-DROP TABLE IF EXISTS books;
-CREATE TABLE books
+DROP TABLE IF EXISTS book_data;
+CREATE TABLE book_data
 (
             isbn VARCHAR(50) PRIMARY KEY,
             book_title VARCHAR(80),
@@ -51,8 +51,8 @@ CREATE TABLE books
 
 
 -- Create table "IssueStatus"
-DROP TABLE IF EXISTS issued_status;
-CREATE TABLE issued_status
+DROP TABLE IF EXISTS issue;
+CREATE TABLE issue
 (
             issued_id VARCHAR(10) PRIMARY KEY,
             issued_member_id VARCHAR(30),
